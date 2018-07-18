@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 3</title>
+  </head>
+  <body>
+    <canvas id="sweetCar" width="400" height="400"></canvas>
+  </body>
+  <script>
+  var c = document.getElementById('sweetCar');
+  var canvasCar = c.getContext('2d');
+
+  canvasCar.fillStyle = '#00A551';
+  canvasCar.fillRect(150,50,150,65);
+
+  canvasCar.fillStyle = '#00A551';
+  canvasCar.fillRect(85,110,280,85);
+
+  canvasCar.beginPath();
+  canvasCar.arc(115,230,35,0,Math.PI*2,true);
+  canvasCar.fillStyle="#CDCDCD";
+  canvasCar.fill();
+  canvasCar.stroke();
+  canvasCar.beginPath();
+  canvasCar.arc(330,230,35,0,Math.PI*2,true);
+  canvasCar.fillStyle="#CDCDCD";
+  canvasCar.fill();
+  canvasCar.stroke();
+  </script>
+</html>
